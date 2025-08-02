@@ -65,11 +65,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5      &mmv MOVE_UP     &kp F6                &kp F7                    &kp F8                       &kp F9     &kp F10               &kp F11
-&trans      &kp GRAVE  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &kp HOME              &kp PAGE_DOWN             &kp PG_UP                    &kp END    &kp MINUS             &kp EQUAL
-&trans      &kp TILDE  &trans     &trans     &trans     &mkp MB5    &mmv MOVE_LEFT   &kp LEFT              &kp DOWN                  &kp UP_ARROW                 &kp RIGHT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans      &trans     &trans     &trans     &trans     &trans      &mmv MOVE_RIGHT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp INSERT                   &kp F12    &trans                &trans
-&kp C_MUTE  &trans     &trans     &trans     &trans     &trans      &mkp LCLK        &trans                &mt RIGHT_ALT LEFT_BRACE  &mt RIGHT_SHIFT RIGHT_BRACE  &trans     &trans
+&kp GRAVE   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5      &mmv MOVE_UP     &kp F6     &kp F7                    &kp F8                       &kp F9      &kp F10               &kp F11
+&trans      &kp GRAVE  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &kp HOME   &kp PAGE_DOWN             &kp PG_UP                    &kp END     &kp MINUS             &kp EQUAL
+&trans      &kp TILDE  &trans     &trans     &trans     &mkp MB5    &mmv MOVE_LEFT   &kp LEFT   &kp DOWN                  &kp UP_ARROW                 &kp RIGHT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans      &trans     &trans     &trans     &trans     &trans      &mmv MOVE_RIGHT  &kp CARET  &kp AMPERSAND             &kp F12                      &kp DOLLAR  &trans                &trans
+&kp C_MUTE  &trans     &trans     &trans     &trans     &trans      &mkp LCLK        &trans     &mt RIGHT_ALT LEFT_BRACE  &mt RIGHT_SHIFT RIGHT_BRACE  &trans      &trans
             >;
 
             display-name = "layer1";
