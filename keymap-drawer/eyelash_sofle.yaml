@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:keyboard-esc$$
   - A
   - S
   - D
@@ -54,17 +54,17 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - navigation
+  - {t: '-', h: '$$mdi:apple-keyboard-command$$', s: _}
+  - {t: '=', h: navigation, s: +}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - symbol
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '[', h: symbol, s: '{'}
+  - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   navigation:
   - F1
   - F2
