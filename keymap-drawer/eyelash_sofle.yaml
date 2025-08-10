@@ -64,7 +64,7 @@ layers:
   - {t: '[', h: symbol, s: '{'}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   - {t: 'Alt+$$mdi:backspace$$', h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:apple-keyboard-command$$
+  - AltGr+Sft+Ctl+F11
   navigation:
   - F1
   - F2
