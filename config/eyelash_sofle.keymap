@@ -39,21 +39,25 @@
         compatible = "zmk,behavior-caps-word";
         label = "CAPS_WORD_CASE";
         #binding-cells = <0>;
-        continue-list = <UNDERSCORE MINUS>;
+        continue-list = <UNDERSCORE MINUS A C B D E F G H I J L K M N O Q P R S T U V W X Y Z NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_7 NUMBER_6 NUMBER_8 NUMBER_9 NUMBER_0>;
     };
 
     l_shift_caps_word: l_shift_caps_word {
         compatible = "zmk,behavior-tap-dance";
         label = "L_SHIFT_CAPS_WORD";
         #binding-cells = <0>;
-        bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+        bindings = <&kp LEFT_SHIFT>, <&caps_word_case>;
+
+        tapping-term-ms = <25>;
     };
 
     r_shift_caps_word: r_shift_caps_word {
         compatible = "zmk,behavior-tap-dance";
         label = "R_SHIFT_CAPS_WORD";
         #binding-cells = <0>;
-        bindings = <&kp RIGHT_SHIFT>, <&caps_word>;
+        bindings = <&kp RIGHT_SHIFT>, <&caps_word_case>;
+
+        tapping-term-ms = <50>;
     };
 
     combos {
