@@ -54,16 +54,16 @@ layers:
   - {t: /, s: '?'}
   - '&r_shift_caps_word'
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - {t: '-', h: '$$mdi:apple-keyboard-command$$', s: _}
+  - Meh+F12
+  - {t: 'Ctl+,', h: '$$mdi:apple-keyboard-control$$', s: Ctl+<}
+  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
   - {t: '=', h: navigation, s: +}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '[', h: symbol, s: '{'}
-  - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
-  - {t: 'Alt+$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
+  - {t: 'Alt+$$mdi:backspace$$', h: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:apple-keyboard-command$$
   navigation:
   - F1
@@ -157,7 +157,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
   - '!'
   - '@'
   - '#'
@@ -169,7 +169,7 @@ layers:
   - '*'
   - (
   - )
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -216,7 +216,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB TOG
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
@@ -229,10 +229,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - RGB TOG
-  - RGB EFF
-  - RGB EFR
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PREVIOUS
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -243,8 +243,8 @@ layers:
   - '&soft_off'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB BRI
-  - RGB BRD
+  - PLAY PAUSE
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
