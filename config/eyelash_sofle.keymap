@@ -68,7 +68,7 @@
         #binding-cells = <2>;
         flavor = "tap-preferred";
         quick-tap-ms = <150>;
-        tapping-term-ms = <300>;
+        tapping-term-ms = <250>;
     };
 
     tap_layer: tap_layer {
@@ -77,7 +77,7 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <300>;
+        tapping-term-ms = <250>;
         quick-tap-ms = <150>;
         flavor = "tap-preferred";
     };
