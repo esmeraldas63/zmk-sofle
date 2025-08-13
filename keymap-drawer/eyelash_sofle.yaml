@@ -55,7 +55,7 @@ layers:
   - '&r_shift_caps_word'
   - $$mdi:volume-off$$
   - Meh+F12
-  - {t: 'Ctl+,', h: '$$mdi:apple-keyboard-control$$', s: Ctl+<}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
   - {t: '=', h: '$$mdi:apple-keyboard-command$$', s: +}
   - {t: '$$mdi:keyboard-space$$', h: navigation}
@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
-  - {t: 'Alt+$$mdi:backspace$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-command$$'}
   - AltGr+Sft+Ctl+F11
   navigation:
   - F1
