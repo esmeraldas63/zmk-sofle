@@ -29,7 +29,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-esc$$
   - {t: A, h: navigation}
-  - S
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - D
   - F
   - G
@@ -55,15 +55,15 @@ layers:
   - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - Meh+F12
-  - {t: F12, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
+  - F12
+  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
   - {t: '=', h: '$$mdi:apple-keyboard-command$$', s: +}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
-  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
-  - {t: 'Gui+$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: ']', h: '$$mdi:apple-keyboard-command$$', s: '}'}
+  - Gui+$$mdi:keyboard-space$$
   - {t: 'Ctl+,', s: Ctl+<}
   navigation:
   - F1
