@@ -82,24 +82,23 @@
         flavor = "tap-preferred";
     };
 
-    semicolon_caps_word: semicolon_caps_word {
-        compatible = "zmk,behavior-tap-dance";
-        label = "SEMICOLON_CAPS_WORD";
-        #binding-cells = <0>;
-        bindings = <&kp SEMICOLON>, <&caps_word_case>;
-
-        tapping-term-ms = <50>;
-    };
-
-    semicolon_shift: semicolon_shift {
+    hold_tap_symbol_toggle: hold_tap_symbol_toggle {
         compatible = "zmk,behavior-hold-tap";
-        label = "SEMICOLON_SHIFT";
-        bindings = <&kp>, <&semicolon_caps_word>;
+        label = "HOLD_TAP_SYMBOL_TOGGLE";
+        bindings = <&kp>, <&toggle_symbols>;
 
         #binding-cells = <2>;
         flavor = "tap-preferred";
         quick-tap-ms = <150>;
         tapping-term-ms = <250>;
+    };
+
+    toggle_symbols: toggle_symbols {
+        compatible = "zmk,behavior-caps-word";
+        label = "TOGGLE_SYMBOLS";
+        #binding-cells = <0>;
+        continue-list = <NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_7 NUMBER_6 NUMBER_8 NUMBER_9 NUMBER_0 BACKSLASH>;
+        mods = <(MOD_LSFT)>;
     };
 
     combos { compatible = "zmk,combos"; };
@@ -112,11 +111,11 @@
 
         main {
             bindings = <
-&none       &kp N1                &kp N2                &kp N3                        &kp N4                    &kp N5                        &kp UP_ARROW     &kp N6              &kp N7                                &kp N8                                 &kp N9                 &kp N0                           &none
-&kp TAB     &kp Q                 &kp W                 &kp E                         &kp R                     &kp T                         &kp DOWN_ARROW   &kp Y               &kp U                                 &kp I                                  &kp O                  &kp P                            &kp BACKSPACE
-&kp ESCAPE  &tap_layer 1 A        &tap_hold LEFT_ALT S  &kp D                         &kp F                     &kp G                         &kp LEFT_ARROW   &kp H               &kp J                                 &kp K                                  &tap_hold RIGHT_ALT L  &tap_hold RIGHT_SHIFT SEMICOLON  &kp SQT
-&kp GRAVE   &kp Z                 &kp X                 &kp C                         &kp V                     &kp B                         &kp RIGHT_ARROW  &kp N               &kp M                                 &kp COMMA                              &kp DOT                &kp FSLH                         &kp BACKSLASH
-&kp C_MUTE  &kp LS(LG(NUMBER_2))  &kp LG(LS(C))         &tap_hold LEFT_CONTROL MINUS  &tap_hold LEFT_GUI EQUAL  &tap_hold LEFT_SHIFT SPACE    &kp ENTER        &tap_layer 2 ENTER  &tap_hold RIGHT_CONTROL LEFT_BRACKET  &tap_hold RIGHT_COMMAND RIGHT_BRACKET  &kp RG(SPACE)          &kp RC(COMMA)
+&none       &kp N1                &kp N2                &kp N3                        &kp N4                    &kp N5                        &kp UP_ARROW     &kp N6  &kp N7                                &kp N8                                 &kp N9                 &kp N0                           &none
+&kp TAB     &kp Q                 &kp W                 &kp E                         &kp R                     &kp T                         &kp DOWN_ARROW   &kp Y   &kp U                                 &kp I                                  &kp O                  &kp P                            &kp BACKSPACE
+&kp ESCAPE  &tap_layer 1 A        &tap_hold LEFT_ALT S  &kp D                         &kp F                     &kp G                         &kp LEFT_ARROW   &kp H   &kp J                                 &kp K                                  &tap_hold RIGHT_ALT L  &tap_hold RIGHT_SHIFT SEMICOLON  &kp SQT
+&kp GRAVE   &kp Z                 &kp X                 &kp C                         &kp V                     &kp B                         &kp RIGHT_ARROW  &kp N   &kp M                                 &kp COMMA                              &kp DOT                &kp FSLH                         &kp ENTER
+&kp C_MUTE  &kp LS(LG(NUMBER_2))  &kp LG(LS(C))         &tap_hold LEFT_CONTROL MINUS  &tap_hold LEFT_GUI EQUAL  &tap_hold LEFT_SHIFT SPACE    &kp ENTER        &sl 2   &tap_hold RIGHT_CONTROL LEFT_BRACKET  &tap_hold RIGHT_COMMAND RIGHT_BRACKET  &kp RG(SPACE)          &kp RC(COMMA)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -138,11 +137,11 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans   &trans
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &kp N6  &kp N7  &kp N8  &kp N9   &kp N0   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans         &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                  &trans  &kp F7  &kp F8         &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                  &trans  &kp N6  &kp N7         &kp N8  &kp N9   &kp N0   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &kp BACKSLASH  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &hold_tap_symbol_toggle LEFT_SHIFT 0    &trans  &trans  &trans         &trans  &trans   &trans
             >;
         };
 
