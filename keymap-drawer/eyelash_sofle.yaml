@@ -38,7 +38,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '''', s: '"'}
   - (
   - Z
@@ -56,7 +56,7 @@ layers:
   - $$mdi:volume-off$$
   - Meh+F12
   - {t: F12, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
   - {t: '=', h: '$$mdi:apple-keyboard-command$$', s: +}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
