@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-esc$$
   - {t: A, h: navigation}
   - S
@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - Meh+F12
   - {t: F12, h: '$$mdi:apple-keyboard-control$$'}
@@ -60,7 +60,7 @@ layers:
   - {t: '=', h: '$$mdi:apple-keyboard-command$$', s: +}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: symbol}
+  - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   - {t: 'Gui+$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
