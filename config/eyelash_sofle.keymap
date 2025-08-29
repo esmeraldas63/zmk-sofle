@@ -48,7 +48,7 @@
         #binding-cells = <0>;
         bindings = <&kp LEFT_SHIFT>, <&caps_word_case>;
 
-        tapping-term-ms = <50>;
+        tapping-term-ms = <100>;
     };
 
     r_shift_caps_word: r_shift_caps_word {
@@ -57,7 +57,7 @@
         #binding-cells = <0>;
         bindings = <&kp RIGHT_SHIFT>, <&caps_word_case>;
 
-        tapping-term-ms = <50>;
+        tapping-term-ms = <100>;
     };
 
     tap_hold: tap_hold {
