@@ -82,45 +82,6 @@
         flavor = "tap-preferred";
     };
 
-    hold_tap_symbol_toggle: hold_tap_symbol_toggle {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOLD_TAP_SYMBOL_TOGGLE";
-        bindings = <&kp>, <&toggle_symbols>;
-
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        quick-tap-ms = <150>;
-        tapping-term-ms = <250>;
-    };
-
-    toggle_symbols: toggle_symbols {
-        compatible = "zmk,behavior-caps-word";
-        label = "TOGGLE_SYMBOLS";
-        #binding-cells = <0>;
-        continue-list = <NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_7 NUMBER_6 NUMBER_8 NUMBER_9 NUMBER_0 BACKSLASH>;
-        mods = <(MOD_LSFT)>;
-    };
-
-    semicolon_caps_word: semicolon_caps_word {
-        compatible = "zmk,behavior-tap-dance";
-        label = "SEMICOLON_CAPS_WORD";
-        #binding-cells = <0>;
-        bindings = <&kp SEMICOLON>, <&caps_word_case>;
-
-        tapping-term-ms = <50>;
-    };
-
-    hold_tap_semicolon_caps_word: hold_tap_semicolon_caps_word {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOLD_TAP_SEMICOLON_CAPS_WORD";
-        bindings = <&kp>, <&semicolon_caps_word>;
-
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        quick-tap-ms = <150>;
-        tapping-term-ms = <250>;
-    };
-
     combos { compatible = "zmk,combos"; };
 
     behaviors {
