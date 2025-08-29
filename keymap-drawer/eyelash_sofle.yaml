@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - Sft+Gui+2
   - Gui+Sft+C
-  - {t: '-', s: _}
+  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
   - {t: '=', h: '$$mdi:apple-keyboard-command$$', s: +}
   - {t: '$$mdi:keyboard-space$$', h: navigation}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: '[', h: '$$mdi:apple-keyboard-command$$', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   - Gui+$$mdi:keyboard-space$$
   - {t: 'Ctl+,', s: Ctl+<}
   symbol:
