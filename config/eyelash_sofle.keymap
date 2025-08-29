@@ -92,11 +92,11 @@
 
         main {
             bindings = <
-&kp GRAVE           &kp N1                    &kp N2                &kp N3     &kp N4                    &kp N5                &kp UP_ARROW     &kp N6              &kp N7                                &kp N8             &kp N9                 &kp N0                             &kp BACKSPACE
-&kp TAB             &kp Q                     &kp W                 &kp E      &kp R                     &kp T                 &kp DOWN_ARROW   &kp Y               &kp U                                 &kp I              &kp O                  &kp P                              &kp SLASH
-&kp ESCAPE          &tap_hold LEFT_CONTROL A  &tap_hold LEFT_ALT S  &kp D      &kp F                     &kp G                 &kp LEFT_ARROW   &kp H               &kp J                                 &kp K              &tap_hold RIGHT_ALT L  &tap_hold RIGHT_CONTROL SEMICOLON  &kp SQT
-&l_shift_caps_word  &kp Z                     &kp X                 &kp C      &kp V                     &kp B                 &kp RIGHT_ARROW  &kp N               &kp M                                 &kp COMMA          &kp DOT                &kp FSLH                           &r_shift_caps_word
-&kp C_MUTE          &kp LS(LG(NUMBER_2))      &kp LG(LS(C))         &kp MINUS  &tap_hold LEFT_GUI EQUAL  &tap_layer 2 SPACE    &kp ENTER        &tap_layer 1 ENTER  &tap_hold RIGHT_COMMAND LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RG(SPACE)          &kp RC(COMMA)
+&kp GRAVE           &kp N1                    &kp N2                &kp N3                        &kp N4                    &kp N5                &kp UP_ARROW     &kp N6              &kp N7                                &kp N8                             &kp N9                 &kp N0                             &kp BACKSPACE
+&kp TAB             &kp Q                     &kp W                 &kp E                         &kp R                     &kp T                 &kp DOWN_ARROW   &kp Y               &kp U                                 &kp I                              &kp O                  &kp P                              &kp SLASH
+&kp ESCAPE          &tap_hold LEFT_CONTROL A  &tap_hold LEFT_ALT S  &kp D                         &kp F                     &kp G                 &kp LEFT_ARROW   &kp H               &kp J                                 &kp K                              &tap_hold RIGHT_ALT L  &tap_hold RIGHT_CONTROL SEMICOLON  &kp SQT
+&l_shift_caps_word  &kp Z                     &kp X                 &kp C                         &kp V                     &kp B                 &kp RIGHT_ARROW  &kp N               &kp M                                 &kp COMMA                          &kp DOT                &kp FSLH                           &r_shift_caps_word
+&kp C_MUTE          &kp LS(LG(NUMBER_2))      &kp LG(LS(C))         &tap_hold LEFT_CONTROL MINUS  &tap_hold LEFT_GUI EQUAL  &tap_layer 2 SPACE    &kp ENTER        &tap_layer 1 ENTER  &tap_hold RIGHT_COMMAND LEFT_BRACKET  &tap_hold RIGHT_ALT RIGHT_BRACKET  &kp RG(SPACE)          &kp RC(COMMA)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
