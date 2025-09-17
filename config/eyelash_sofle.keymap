@@ -109,7 +109,7 @@
 &trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &trans  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans           &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
-&trans  &trans           &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
+&trans  &trans           &trans       &trans    &trans      &mo 3          &trans  &trans     &trans         &trans        &trans                &trans
             >;
         };
 
@@ -119,7 +119,7 @@
 &trans      &trans  &mkp LCLK  &mkp MCLK        &mkp RCLK    &trans    &mmv MOVE_DOWN   &trans         &trans    &mkp MB5      &mkp MB4   &kp PAGE_UP  &kp HOME
 &trans      &trans  &trans     &kp LC(LS(TAB))  &kp LC(TAB)  &trans    &mmv MOVE_LEFT   &kp LEFT       &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans       &trans
 &trans      &trans  &trans     &trans           &trans       &trans    &mmv MOVE_RIGHT  &kp PAGE_DOWN  &trans    &trans        &trans     &trans       &kp END
-&kp C_MUTE  &trans  &trans     &trans           &trans       &trans    &mkp LCLK        &mo 3          &trans    &trans        &trans     &trans
+&kp C_MUTE  &trans  &trans     &trans           &trans       &trans    &mkp LCLK        &trans         &trans    &trans        &trans     &trans
             >;
 
             display-name = "navigation";
