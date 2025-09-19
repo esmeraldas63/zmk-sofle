@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '[', h: symbol, s: '{'}
   - {t: ']', s: '}'}
-  - \
+  - {t: \, s: '|'}
   - Sft+Gui+C
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   symbol:
